@@ -5,6 +5,7 @@ session_start();
 include 'functions/conn.php';
 //Include functions.
 include 'functions/functions.php';
+//$teste;
 echo 
 '
   <!DOCTYPE html>
