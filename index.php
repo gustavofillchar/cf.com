@@ -1,6 +1,6 @@
 <?php
 //Starting sessions.
-//session_start();
+session_start();
 //Including connection with the databse.
 include 'functions/conn.php';
 //Include functions.
