@@ -9,15 +9,16 @@ if(isset($_SESSION['logged']))
 else
 {
   $photoProffile = "../img/nophoto.gif";
-  $nameProffile = "<br><a href='logged.php'>Entrar ou cadastrar</a>";
+  $nameProffile = "<br><a href='login.php'>Entrar ou Cadastrar</a>";
 }
 echo 
 '
   <div id="menu">
     <div class="profile">
-      <img src="'.$photoProffile.'" class="perfil">
+      <a href=\'login.php\'><img src="'.$photoProffile.'" class="perfil"></a>
       <h1>'.$nameProffile.'</h1>
 ';
+
 if(isset($_SESSION['logged']))
 {
   echo 
@@ -26,6 +27,7 @@ if(isset($_SESSION['logged']))
     <button class="btn-perfil"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</button>
   ';
 }
+
 echo 
 '
         </div>
@@ -61,6 +63,14 @@ echo
           </div>
         </a>
         <hr class="style-six">
+        ';
+
+
+if(isset($_SESSION['logged'])) {
+
+    //listar favoritos aqui
+    echo '
+        
         <h1 class="h1-text"><i class="fa fa-star" aria-hidden="true"></i>  Favoritos</h1>
         
         <a href="../home/">
@@ -123,6 +133,9 @@ echo
         
         <hr class="style-six">
         </div>
-      </div>
-';
+        ';
+}
 ?>
+      </div>
+
+
