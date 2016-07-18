@@ -1,5 +1,4 @@
 <?php
-// EU SÓ QUERIA TER O PAU DO TAMANHO DO PÉ DA MESA //
 //Starting sessions.
 session_start();
 //Including connection with the databse.
