@@ -2,10 +2,13 @@
 
 /**
  * Created by PhpStorm.
- * User: gusta
+ * User: @gustavofillchar
  * Date: 18/07/2016
  * Time: 15:07
  */
+
+require_once '../config/dbconfig.php';
+
 class usuario
 {
     private $conn;
@@ -93,3 +96,5 @@ class usuario
     }
 
 }
+
+?>

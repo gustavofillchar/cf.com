@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* basico css */
+
+body{
+  background: #ececec;
+  color: #666666;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0px;
+}
+
+#nav {
+  align-content: center;
+  text-align: center;
+  background: #fff;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: float;
+}
+
+#nav p{
+  color: #aaa;
+  font-size: 12px;
+}
+
+
+#navred {
+  align-content: center;
+  text-align: center;
+  background: #f44336;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 1.5px 1.5px 5px #dcdcdc;
+  position: float;
+}
+
+::selection { background: #fbc02d; color: #fff; }
+
+::-moz-selection { background: #fbc02d; color: #fff; }
+
+.btn{
+  font-size: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 350px;
+  text-align: center;
+  color: #fff;
+  background: #f44336;
+  border: 0px;
+  margin-top: 15px;
+  z-index: auto;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.box-conteudo{
+  color: #f44336;
+  height: auto;
+}
+
+.box-cont-1 h1{
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.box{
+  background: #fff;
+  height: auto;
+  margin-top: 35px;
+  box-shadow: 0px 0px 4px #c9c9c9;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.box-login{
+    max-width: 440px;
+    width: 100%;
+    display: inline-block;
+    margin: 8px;
+    vertical-align: middle;
+}
+
+.box-login h1{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-login input{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.box-login button{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 320px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.btn-item{
+  font-size: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  background: #3fce5a;
+  border: 0px;
+  margin-top: 8px;
+  z-index: auto;
+}
+
+.btn-item:hover{
+  background: #56e270;
+}
+
+.logobar{
+
+}
+
+p{
+  display: inline;
+  padding: 15px;
+}
+
+a:link {
+    color: #f44336;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f44336;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff746a;
+    text-decoration: none;
+}
+
+a:active {
+    
+    color: #fbc02d;
+    text-decoration: none;
+}
+
+.footer{
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 3px;
+  background-color: #d6d6d6;
+}
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
