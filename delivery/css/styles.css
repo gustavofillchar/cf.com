@@ -1,0 +1,180 @@
+/*=========== RESET ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {background-color: #f1f1f1;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+/*=============================*/
+
+
+.barra-topo{
+    width: 100%;
+    height: 82px;
+    background-color: #fff;
+}
+.barra-red{
+    width: 100%;
+    padding: 12px 0px;
+    background-color: #f44336;
+    text-align: center;
+}
+.barra-red h2{
+    color: #fbc02d;
+    font-weight: bolder;
+}
+
+.barra-red h1{
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.conteudo h1{
+    color: #f44336;
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 1.35em;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.restaurante{
+    background-color: transparent;
+    margin: 25px 5%;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+}
+
+.restaurante img{
+    width: 100%;
+}
+
+.restaurante h1{
+    font-size: 1.0em;
+    color: #666666;
+    padding: 3px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.restaurante h2{
+    font-size: 1em;
+    color: #666666;
+    padding: 2px 0;
+    text-align: left;
+}
+
+.restaurante i{
+    color: #3fce5a;
+}
+
+.btn-menu{
+    color: #f44336;
+    background-color: transparent;
+    padding-top: 42px;
+    float: left;
+    margin-left: 20px;
+}
+
+.logo{
+    width: 240px;
+    height: 44px;
+    float: right;
+    margin-top: 18px;
+    margin-right: 20px;
+    background: url(../img/logobar.png) center center/230px no-repeat;
+    font-size: 0;
+}
+
+.menu{
+    background-color: aquamarine;
+    width: 100%;
+    font-size: 1.25em;
+    height: 100%;
+    display: none;
+}
+
+.menu a{
+    color: #666666;
+}
+
+.menu ul{
+}
+
+.btn-pedir{
+    background-color: #3fce5a;
+    color: white;
+    width: 100%;
+    margin-top: 7px;
+    font-size: 1.25em;
+    padding: 12px 0;
+}
+
+.btn-pedir:hover{
+    background-color: #5ed073;
+}
+
+.conteudo{
+    height: auto;
+    background-color: white;
+    margin: 15px 5%;
+    padding: 8px 0px;
+    width: 90%;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.05);
+}
+
+/* @MEDIA QUEERY */
+
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+    .restaurante{
+        margin-left: 4.5%;
+        margin-right: 4%;
+        width: 41%;
+    }
+}
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+    .restaurante{
+        margin-left: 2.7%;
+        margin-right: 2%;
+        width: 28%;
+    }
+    .barra-red h2{
+        color: #fbc02d;
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+
+    .barra-red h1{
+        color: #FFF;
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+}
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 920px) {
+    .restaurante{
+        margin-left: 2.55%;
+        margin-right: 2%;
+        width: 20%;
+    }
+}
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1024px) {
+    .conteudo{
+        height: auto;
+        margin: 15px 15%;
+        width: 70%;
+    }
+}
