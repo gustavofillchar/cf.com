@@ -20,6 +20,7 @@ img {max-width: 100%;}
     width: 100%;
     height: 82px;
     background-color: #fff;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.33);
 }
 .barra-red{
     width: 100%;
@@ -31,12 +32,10 @@ img {max-width: 100%;}
     color: #fbc02d;
     font-weight: bolder;
 }
-
 .barra-red h1{
     color: #FFF;
     font-weight: bolder;
 }
-
 .conteudo h1{
     color: #f44336;
     font-weight: bold;
@@ -44,9 +43,7 @@ img {max-width: 100%;}
     font-size: 1.35em;
     text-align: center;
     text-transform: uppercase;
-
 }
-
 .restaurante{
     background-color: transparent;
     margin: 25px 5%;
@@ -54,11 +51,9 @@ img {max-width: 100%;}
     text-align: center;
     display: inline-block;
 }
-
 .restaurante img{
     width: 100%;
 }
-
 .restaurante h1{
     font-size: 1.0em;
     color: #666666;
@@ -66,18 +61,15 @@ img {max-width: 100%;}
     font-weight: bold;
     text-align: left;
 }
-
 .restaurante h2{
     font-size: 1em;
     color: #666666;
     padding: 2px 0;
     text-align: left;
 }
-
 .restaurante i{
     color: #3fce5a;
 }
-
 .btn-menu{
     color: #f44336;
     background-color: transparent;
@@ -86,24 +78,28 @@ img {max-width: 100%;}
     margin-left: 20px;
 }
 .btn-close{
-    color: #f44336;
+    color: #ff7066;
     background-color: transparent;
     padding-top: 42px;
     float: left;
     margin-left: 20px;
     display: none;
 }
-
+.bar{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 .logo{
-    width: 240px;
+    width: 180px;
     height: 44px;
     float: right;
     margin-top: 18px;
     margin-right: 20px;
-    background: url(../img/logobar.png) center center/230px no-repeat;
+    background: url(../img/logobar.png) center center/180px no-repeat;
     font-size: 0;
 }
-
 .menu{
     background-color: white;
     width: 100%;
@@ -112,15 +108,82 @@ img {max-width: 100%;}
     display: none;
     position: absolute;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.24);
+    padding: 10px;
 }
-
+.menu li{
+    font-size: 0.9em;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.menu li:hover{
+    color: white;
+    background-color: #666666;
+}
+.menu li:active{
+    color: white;
+    background-color: #f44336;
+}
+.menu li:visited{
+    color: white;
+    background-color: #f44336;
+}
 .menu a{
     color: #666666;
 }
-
-.menu ul{
+.menu i{
+    position: absolute;
 }
-
+.aberto{
+    color: #3fce5a;
+}
+.fav-grupo{
+    display: none;
+}
+.fav-grupo h1.fav-top{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: #f44336;
+}
+.fav-grupo i{
+    position: relative;
+    font-size: 0.8em;
+}
+.favorito{
+    padding: 10px 10px;
+}
+.favorito img{
+    height: 40px;
+    width: auto;
+    max-width: 40px;
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+.favorito h1{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.favorito h2{
+    font-size: 0.9em;
+}
+.perfil{
+    text-align: center;
+    padding: 20px 0;
+}
+.perfil h1{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #666666;
+}
+.perfil img{
+    height: 50px;
+    border-radius: 100%;
+}
 .btn-pedir{
     background-color: #3fce5a;
     color: white;
@@ -129,11 +192,9 @@ img {max-width: 100%;}
     font-size: 1.25em;
     padding: 12px 0;
 }
-
 .btn-pedir:hover{
     background-color: #5ed073;
 }
-
 .conteudo{
     height: auto;
     background-color: white;
@@ -142,7 +203,6 @@ img {max-width: 100%;}
     width: 90%;
     box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.07);
 }
-
 .rodape{
     background-color: #888888;
     padding: 10% 0;
@@ -160,20 +220,55 @@ img {max-width: 100%;}
     margin: 0;
     padding: 0;
 }
-
 .social{
     font-size: 2.2em;
 }
-
 .rodape a{
     color: white;
     margin-right: 25px;
 }
-
 .rodape a:hover{
     color: #dadada;
 }
-
+.btn-sair {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+    background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color:#ffffff;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:12px;
+    padding:5px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+.btn-sair:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+    background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+    background-color:#f6f6f6;
+}
+.btn-sair:active {
+    position:relative;
+    top:1px;
+}
 
 /* @MEDIA QUEERY */
 
@@ -185,7 +280,9 @@ img {max-width: 100%;}
         width: 41%;
     }
     .logo{
-        margin-right: 4%;
+        width: 230px;
+        margin-right: 4.3%;
+        background: url(../img/logobar.png) center center/230px no-repeat;
     }
     .btn-menu{
         margin-left: 5%;
@@ -231,21 +328,39 @@ img {max-width: 100%;}
         padding: 2% 0;
         font-size: 0.7em;
     }
+    .menu{
+        width: 30%;
+    }
 }
 /* LARGE DEVICES - WIDE SCREENS*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1248px) {
     .conteudo{
         height: auto;
-        margin: 15px 15%;
-        width: 70%;
+        margin: 15px 17.5%;
+        width: 65%;
+    }
+    .menu{
+        width: 17%;
+        height: auto;
     }
     .logo{
-        margin-right: 15%;
+        margin-right: 17.5%;
     }
     .btn-menu{
-        margin-left: 15%;
+        margin-left: 17.5%;
     }
     .btn-close{
-        margin-left: 15%;
+        margin-left: 17.5%;
+    }
+    .menu li{
+        font-size: 0.7em;
+        padding: 10px 5px;
+        width: 100%;
+        background-color: #fff;
+        cursor: default;
+        font-weight: bold;
+    }
+    .fav-grupo{
+        display: block;
     }
 }
