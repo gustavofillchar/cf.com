@@ -85,6 +85,14 @@ img {max-width: 100%;}
     float: left;
     margin-left: 20px;
 }
+.btn-close{
+    color: #f44336;
+    background-color: transparent;
+    padding-top: 42px;
+    float: left;
+    margin-left: 20px;
+    display: none;
+}
 
 .logo{
     width: 240px;
@@ -97,11 +105,13 @@ img {max-width: 100%;}
 }
 
 .menu{
-    background-color: aquamarine;
+    background-color: white;
     width: 100%;
     font-size: 1.25em;
-    height: 100%;
+    height: auto;
     display: none;
+    position: absolute;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.24);
 }
 
 .menu a{
@@ -130,8 +140,40 @@ img {max-width: 100%;}
     margin: 15px 5%;
     padding: 8px 0px;
     width: 90%;
-    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.07);
 }
+
+.rodape{
+    background-color: #888888;
+    padding: 10% 0;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.05);
+    color: white;
+}
+.rodape ul li {
+    display: list-item;
+    margin: 12px 0px;
+    color: white;
+    font-size: 1.5em;
+}
+.rodape ul li:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.social{
+    font-size: 2.2em;
+}
+
+.rodape a{
+    color: white;
+    margin-right: 25px;
+}
+
+.rodape a:hover{
+    color: #dadada;
+}
+
 
 /* @MEDIA QUEERY */
 
@@ -141,6 +183,15 @@ img {max-width: 100%;}
         margin-left: 4.5%;
         margin-right: 4%;
         width: 41%;
+    }
+    .logo{
+        margin-right: 4%;
+    }
+    .btn-menu{
+        margin-left: 5%;
+    }
+    .btn-close{
+        margin-left: 5%;
     }
 }
 /* SMALL DEVICES - TABLETS*/
@@ -161,13 +212,24 @@ img {max-width: 100%;}
         font-size: 1.2em;
         font-weight: bolder;
     }
+    .rodape{
+        padding: 5% 0;
+        font-size: 0.9em;
+    }
+    .rodape ul li {
+        display: inline;
+    }
 }
 /* MEDIUM DEVICES - TABLETS & DESKTOPS*/
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 920px){
     .restaurante{
         margin-left: 2.55%;
         margin-right: 2%;
         width: 20%;
+    }
+    .rodape{
+        padding: 2% 0;
+        font-size: 0.7em;
     }
 }
 /* LARGE DEVICES - WIDE SCREENS*/
@@ -176,5 +238,14 @@ img {max-width: 100%;}
         height: auto;
         margin: 15px 15%;
         width: 70%;
+    }
+    .logo{
+        margin-right: 15%;
+    }
+    .btn-menu{
+        margin-left: 15%;
+    }
+    .btn-close{
+        margin-left: 15%;
     }
 }

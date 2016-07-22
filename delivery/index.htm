@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Fillchar">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -17,12 +17,8 @@
 <header>
     <div class="barra-topo">
         <a href="index.htm"><h1 class="logo">Comendo Fácil | Pedidos Online</h1></a>
-        <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
-    </div>
-
-    <div class="barra-red">
-        <h2>Você está em:</h2>
-        <h1>Carmo do Rio Claro, MG.</h1>
+        <button class="btn-menu"><i class="fa fa-navicon fa-lg"></i></button>
+        <button class="btn-close"><i class="fa fa-times fa-lg"></i></button>
     </div>
 
     <nav class="menu">
@@ -34,6 +30,12 @@
             <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Fale Conosco</a></li>
         </ul>
     </nav>
+
+    <div class="barra-red">
+        <h2>Você está em:</h2>
+        <h1>Carmo do Rio Claro, MG.</h1>
+    </div>
+
 
     <!-- Sessão em destaque na cidade X -->
     <section class="conteudo">
@@ -82,13 +84,29 @@
 
 <!-- RODAPÉ -->
 <footer class="rodape">
+    <ul>
+        <li><a href="#">Termos</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Publicidade</a></li>
+        <li><a href="#">Sobre</li>
+    </ul>
+
 </footer>
 
 <!-- JQUERY -->
 <script src="js/jquery-3.1.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>
-
+    $(".btn-menu").click(function(){
+        $(".menu").show();
+        $(".btn-menu").hide();
+        $(".btn-close").show();
+    });
+    $(".btn-close").click(function(){
+        $(".menu").hide();
+        $(".btn-menu").show();
+        $(".btn-close").hide();
+    });
 </script>
 </body>
 </html>
