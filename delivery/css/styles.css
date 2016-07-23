@@ -13,6 +13,17 @@ body {background-color: #f1f1f1;}
 a {text-decoration: none;}
 ul {list-style: none;}
 img {max-width: 100%;}
+
+::-webkit-scrollbar-track {
+    background-color: #fbc02d;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #f44336;
+}
 /*=============================*/
 
 
@@ -36,6 +47,14 @@ img {max-width: 100%;}
     color: #FFF;
     font-weight: bolder;
 }
+.conteudo{
+    height: auto;
+    background-color: white;
+    margin: 40px 5%;
+    padding: 8px 0px;
+    width: 90%;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.07);
+}
 .conteudo h1{
     color: #f44336;
     font-weight: bold;
@@ -43,6 +62,9 @@ img {max-width: 100%;}
     font-size: 1.35em;
     text-align: center;
     text-transform: uppercase;
+}
+.conteudo h1.close{
+    color: #666666;
 }
 .restaurante{
     background-color: transparent;
@@ -69,6 +91,9 @@ img {max-width: 100%;}
 }
 .restaurante i{
     color: #3fce5a;
+}
+.restaurante i.fechado{
+    color: #999999;
 }
 .btn-menu{
     color: #f44336;
@@ -135,7 +160,7 @@ img {max-width: 100%;}
 .menu i{
     position: absolute;
 }
-.aberto{
+#aberto{
     color: #3fce5a;
 }
 .fav-grupo{
@@ -163,6 +188,7 @@ img {max-width: 100%;}
     display: inline;
     float: left;
     margin-right: 10px;
+    vertical-align: middle;
 }
 .favorito h1{
     font-size: 0.7em;
@@ -176,9 +202,10 @@ img {max-width: 100%;}
     padding: 20px 0;
 }
 .perfil h1{
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     color: #666666;
+    margin: 5px 0;
 }
 .perfil img{
     height: 50px;
@@ -195,13 +222,16 @@ img {max-width: 100%;}
 .btn-pedir:hover{
     background-color: #5ed073;
 }
-.conteudo{
-    height: auto;
-    background-color: white;
-    margin: 15px 5%;
-    padding: 8px 0px;
-    width: 90%;
-    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.07);
+.btn-ver{
+    background-color: #666666;
+    color: white;
+    width: 100%;
+    margin-top: 7px;
+    font-size: 1.25em;
+    padding: 12px 0;
+}
+.btn-ver:hover{
+    background-color: #777777;
 }
 .rodape{
     background-color: #888888;
@@ -229,6 +259,26 @@ img {max-width: 100%;}
 }
 .rodape a:hover{
     color: #dadada;
+}
+.btn-alterar {
+    background-color:transparent;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border:1px solid #ffffff;
+    color:#ffffff;
+    font-size:1em;
+    padding:10px 20px;
+    text-decoration:none;
+    margin-top: 10px;
+}
+.btn-alterar:hover {
+    border:1px solid rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.9);
+}
+.btn-alterar:active {
+    position:relative;
+    top:1px;
 }
 .btn-sair {
     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -269,6 +319,31 @@ img {max-width: 100%;}
     position:relative;
     top:1px;
 }
+.btn-buscar {
+    -moz-box-shadow:inset 0px 1px 0px 0px #f44236;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #f44236;
+    box-shadow:inset 0px 1px 0px 0px #f44236;
+    background-color:#f44236;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #f44236;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:14px;
+    padding:18px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #f44236;
+}
+.btn-buscar:hover {
+    background-color:#eb382f;
+}
+.btn-buscar:active {
+    position:relative;
+    top:1px;
+}
 
 /* @MEDIA QUEERY */
 
@@ -290,6 +365,10 @@ img {max-width: 100%;}
     .btn-close{
         margin-left: 5%;
     }
+
+    .menu{
+        width: 60%;
+    }
 }
 /* SMALL DEVICES - TABLETS*/
 @media screen and (min-width: 768px) {
@@ -297,6 +376,10 @@ img {max-width: 100%;}
         margin-left: 2.7%;
         margin-right: 2%;
         width: 28%;
+    }
+    .perfil img{
+        height: 50px;
+        border-radius: 100%;
     }
     .barra-red h2{
         color: #fbc02d;
@@ -340,7 +423,7 @@ img {max-width: 100%;}
         width: 65%;
     }
     .menu{
-        width: 17%;
+        width: 16.5%;
         height: auto;
     }
     .logo{
@@ -362,5 +445,8 @@ img {max-width: 100%;}
     }
     .fav-grupo{
         display: block;
+    }
+    #fav-hide{
+        display: none;
     }
 }
