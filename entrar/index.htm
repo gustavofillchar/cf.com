@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entrar ou Cadastrar | Comendo Fácil</title>
+    <meta name="description" content="Aplicativo para pedidos online grátis!">
+    <meta name="keywords" content="comendo, facil, pedidos, online, gratis, delivery, entrega">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Grupo Fillchar">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- CABEÇALHO -->
+<header>
+    <div class="topo">
+        <a href="#"><img class="i-mobile" src="../assets/img/logobar.png"></a>
+        <a href="#"><img class="i-larger" src="../assets/img/logocomp.png"></a>
+    </div>
+</header>
+
+
+<!-- login -->
+<section class="conteudo-form centro">
+    <div class="vermelhabarra"></div>
+    <h3>Já sou cadastrado!</h3>
+
+    <form class="login-form">
+        <a href="#"><button class="btn-facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i> Entrar
+            com o
+            Facebook</button></a>
+        <input type="email" class="form-input">
+        <input type="password" class="form-input">
+        <a href="#"><button class="btn-login-mail">Entrar utilizando e-mail</button></a>
+    </form>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+
+    <a href="#"><img src="../assets/img/rodape.png"></a>
+    <hr class="bar spa">
+    <div>
+        <button class="btn-normal"><i class="fa fa-question-circle" aria-hidden="true"></i> Ajuda</button>
+        <button class="btn-normal"><i class="fa fa-cogs" aria-hidden="true"></i> Configurações</button>
+        <button class="btn-normal"><i class="fa fa-briefcase" aria-hidden="true"></i> Trabalhe Conosco</button>
+        <button class="btn-normal"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Venda Grátis</button>
+    </div>
+    <br>
+    <ul>
+        <li><a href="#">Termos</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Política e Segurança</a></li>
+        <li><a href="#">Enviar Feedback</a></li>
+    </ul>
+    <br>
+    <ul>
+        <li><p>Comendo Fácil. ©2015-2016 - Todos os direitos reservados.</p></li>
+    </ul>
+</footer>
+
+<!-- JQUERY -->
+<script src="../assets/js/jquery-3.1.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+    $(".btn-menu").click(function(){
+        $(".menu").show();
+        $(".btn-menu").hide();
+        $(".btn-close").show();
+    });
+    $(".btn-close").click(function(){
+        $(".menu").hide();
+        $(".btn-menu").show();
+        $(".btn-close").hide();
+    });
+</script>
+</body>
+</html>

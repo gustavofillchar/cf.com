@@ -1,0 +1,153 @@
+/* ====== LOGIN, ENTRAR, CADASTRAR ====== */
+
+.topo{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.05);
+    width: 100%;
+}
+.topo img.i-mobile{
+    height: 40px;
+    width: auto;
+}
+.topo img.i-larger{
+    display: none;
+}
+
+.centro{
+    text-align: center;
+}
+.conteudo-form{
+    height: auto;
+    background-color: white;
+    margin: 20px 5%;
+    padding: 0px 0px;
+    width: 90%;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.05);
+}
+.conteudo-form h1{
+    color: #f44336;
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 1.35em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.conteudo-form h3{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #f44336;
+    padding: 10px 5px;
+}
+
+/* ============= selecionar =============*/
+.escolha{
+    width: 90%;
+    font-size: 1.1em;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 7px;
+    padding: 10px 8px;
+    color: #666666;
+    margin-top: 20px;
+}
+.descricao{
+    font-size: 1.2em;
+    padding: 5px 8px;
+    font-weight: bold;
+    color: #666666;
+}
+
+
+/* ============= bottons =============*/
+
+.btn-facebook{
+    width: 90%;
+    font-size: 1.08em;
+    background-color: #3b5998;
+    color: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px 5px;
+}
+.btn-facebook:hover{
+    background-color: #344e86;
+}
+.btn-facebook:active{
+    position: relative;
+    top: 1px;
+}
+.btn-login-mail{
+    width: 90%;
+    font-size: 1.08em;
+    background-color: #f9c02d;
+    color: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px 0px;
+}
+.btn-login-mail:hover{
+    background-color: #fbc02d;
+}
+.btn-login-mail:active{
+    position: relative;
+    top: 1px;
+}
+.btn-facebook i{
+    float: left;
+    margin: 4px 5px;
+}
+
+
+
+/* ======== forms, login,singup ======*/
+.login-form{
+    width: 100%;
+    height: auto;
+}
+.login-form input{
+    width: 90%;
+    font-size: 1.15em;
+    padding: 10px 5px;
+}
+
+/* ===================================*/
+
+
+.conteudo a:hover{
+    text-decoration: underline;
+}
+
+/* @MEDIA QUEERY */
+
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+}
+
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 920px){
+    .escolha{
+        font-size: 1.5em;
+        width: 50%;
+    }
+    .topo img.i-mobile{
+        display: none;
+    }
+    .topo img.i-larger{
+        display: inline;
+    }
+    .btn-select{
+        width: 50%;
+    }
+    .btn-vender{
+        width: 50%;
+    }
+}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1248px) {
+
+}
